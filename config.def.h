@@ -5,6 +5,10 @@
 #define XK_LVol XF86XK_AudioLowerVolume
 #define XK_MVol XF86XK_AudioMute
 #define XK_RVol XF86XK_AudioRaiseVolume
+#define XK_APlay XF86XK_AudioPlay
+#define XK_AStop XF86XK_AudioStop
+#define XK_APrev XF86XK_AudioPrev
+#define XK_ANext XF86XK_AudioNext
 #define XK_LBri XF86XK_MonBrightnessDown
 #define XK_RBri XF86XK_MonBrightnessUp
 
@@ -133,6 +137,11 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Escape, spawn,          SHCMD("power") },
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("displays") },
 	{ MODKEY,                       XK_x,      spawn,          SHCMD("slock") },
+	{ MODKEY,                       XK_m,      spawn,          SHCMD("music") },
+	{ 0,                            XK_APlay,  spawn,          SHCMD("mpc toggle") },
+	{ 0,                            XK_AStop,  spawn,          SHCMD("mpc stop") },
+	{ 0,                            XK_APrev,  spawn,          SHCMD("mpc prev") },
+	{ 0,                            XK_ANext,  spawn,          SHCMD("mpc next") },
 	{ 0,                            XK_Print,  spawn,          SHCMD("screen-save") },
 	{ ShiftMask,                    XK_Print,  spawn,          SHCMD("screen-clip") },
 	{ 0,                            XK_LVol,   spawn,          SHCMD("volctl -5") },
