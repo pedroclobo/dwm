@@ -142,6 +142,8 @@ static Key keys[] = {
 	{ 0,                            XK_AStop,  spawn,          SHCMD("mpc stop") },
 	{ 0,                            XK_APrev,  spawn,          SHCMD("mpc prev") },
 	{ 0,                            XK_ANext,  spawn,          SHCMD("mpc next") },
+	{ ShiftMask,                    XK_LVol,   spawn,          SHCMD("mpc volume -5") },
+	{ ShiftMask,                    XK_RVol,   spawn,          SHCMD("mpc volume +5") },
 	{ 0,                            XK_Print,  spawn,          SHCMD("screen-save") },
 	{ ShiftMask,                    XK_Print,  spawn,          SHCMD("screen-clip") },
 	{ 0,                            XK_LVol,   spawn,          SHCMD("volctl -5") },
