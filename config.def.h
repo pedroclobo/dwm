@@ -15,8 +15,8 @@
 /* rules and classes */
 #define TERMINAL "alacritty"
 #define TERMINAL_CLASS "Alacritty"
-#define BROWSER "brave"
-#define BROWSER_CLASS "Brave-browser"
+#define BROWSER "firefox"
+#define BROWSER_CLASS "firefox"
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
